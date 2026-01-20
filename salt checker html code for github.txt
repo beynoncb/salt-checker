@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UK Salt Intake Checker</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  h1 { color: #2a6ebb; }
+  .food-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+  .food-item { border: 1px solid #ccc; padding: 10px; text-align: center; }
+  img { max-width: 100px; }
+  .section { margin-top: 20px; }
+  .result { margin-top: 20px; font-size: 1.3em; font-weight: bold; padding: 10px; border-radius: 8px; }
+  .low { background-color: #d4edda; color: #155724; }
+  .moderate { background-color: #fff3cd; color: #856404; }
+  .high { background-color: #f8d7da; color: #721c24; }
+  .tips { margin-top: 15px; font-size: 1em; }
+</style>
+</head>
+<body>
+<h1>Check Your Salt Intake</h1>
+<p>Select how often you eat these foods:</p>
+
+<div class="food-grid">
+  <div class="food-item">
+    <img src="bread.jpg" alt="Bread slice">
+    <p>Bread (0.6g)</p>
+    <select data-salt="0.6">
+      <option value="0">Never</option>
+      <option value="0.6">Daily</option>
+      <option value="0.15">Weekly</option>
